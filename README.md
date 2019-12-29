@@ -5,7 +5,7 @@
 
 - Processing Brasil [google groups](https://groups.google.com/forum/#!forum/processing-brasil)
 
-## materias
+## materiais/livros
 
 - [Tradução da referência da linguagem - UFTPR versão 1.0](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
 
