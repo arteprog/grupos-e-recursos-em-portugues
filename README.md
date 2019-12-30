@@ -5,6 +5,8 @@
 
 - Processing Brasil [google groups](https://groups.google.com/forum/#!forum/processing-brasil)
 
+- Processing São Paulo[Facebook](https://www.facebook.com/processingsp/)
+
 ## materiais/livros
 
 - [Tradução da referência da linguagem - UFTPR versão 1.0](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
@@ -17,7 +19,9 @@
 
 ## eventos
 
-- Noite de Processing
+- [Noite de Processing @ São Paulo](https://garoa.net.br/wiki/Noite_de_Processing)
 
-- Processing Commuinity Day
+- [Noite de Processing @ Recife](http://arteprog.space/noite-processing-recife/)
+
+- [Processing Community Day @ São Paulo](http://arteprog.space/PCD-SP-20/)
    
