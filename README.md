@@ -5,17 +5,24 @@
 
 - Processing Brasil [google groups](https://groups.google.com/forum/#!forum/processing-brasil)
 
-- Processing São Paulo[Facebook](https://www.facebook.com/processingsp/)
+- Processing São Paulo [Facebook](https://www.facebook.com/processingsp/)
+
+<!--- Processing Brasil [Facebook](https://www.facebook.com/groups/220933957920203/) meio parado :( -->
 
 ## materiais/livros
 
-- [Tradução da referência da linguagem - UFTPR versão 1.0](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
+- [Guia de programação em Processing](https://www.ranoya.com/aulas/designgenerativo/playgroundDocs/introProcessing.php?theme=dgen&elementos=processing), Guilherme Ranoya (UFPE), 2019.
 
- - [Guia do Prof. Ranoya (UFPE)](https://www.ranoya.com/aulas/designgenerativo/playgroundDocs/introProcessing.php?theme=dgen&elementos=processing)
+- [O código transcendente](https://codigotranscendente.github.io/livro/book.html), Mateus Berruezo, 2019.
  
-- [AMADO, Pedro, Introdução à programação gráfica (usando Processing), 2007](https://repositorio-aberto.up.pt/handle/10216/1848)
+- [Programação Criativa](http://arteprog.space/programacao-criativa/), Monica Rizzolli e Alexandre Villares, 2017-em diante.
 
-- Livro [O código transcendente](https://codigotranscendente.github.io/livro/book.html)
+- [Processing modo Python: material-aulas](https://github.com/villares/material-aulas)
+
+- [Introdução à programação gráfica (usando Processing)](https://repositorio-aberto.up.pt/handle/10216/1848), Pedro Amado (U.Porto), 2007.
+
+- [Tradução da referência da linguagem - versão 1.0](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html), Luiz Merkle (UFTPR), 2005.
+
 
 ## eventos
 
