@@ -7,6 +7,8 @@
 
 - Processing São Paulo [Facebook](https://www.facebook.com/processingsp/)
 
+- Processando Processing - esforço coletivo de tradução [https://github.com/arteprog/Processando-Processing] 
+
 <!--- Processing Brasil [Facebook](https://www.facebook.com/groups/220933957920203/) meio parado :( -->
 
 ## materiais/livros
