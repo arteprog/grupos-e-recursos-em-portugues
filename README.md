@@ -19,7 +19,7 @@
  
 - [Programação Criativa](http://arteprog.space/programacao-criativa/), Monica Rizzolli e Alexandre Villares, 2017-em diante.
 
-- [Processing modo Python: material-aulas](https://github.com/villares/material-aulas)
+- [Processing modo Python: material-aulas](https://github.com/villares/material-aulas), Alexandre Villares, 2019-em diante. 
 
 - [Introdução à programação gráfica (usando Processing)](https://repositorio-aberto.up.pt/handle/10216/1848), Pedro Amado (U.Porto), 2007.
 
