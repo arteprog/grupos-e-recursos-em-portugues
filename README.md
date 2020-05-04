@@ -2,6 +2,8 @@
 
 
 ## grupos/comunidades
+ 
+- Encontros Digitais [www.encontrosdigitais.com.br](http://www.encontrosdigitais.com.br)
 
 - Processing Brasil [google groups](https://groups.google.com/forum/#!forum/processing-brasil)
 
