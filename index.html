@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Host Platforms and Languages</title>
+    <title>Recursos de Programação Criativa</title>
     <meta name="author" content="Alexandre B A Villares">
     <meta content="Resources for Teaching Programming" />
 
@@ -21,29 +21,54 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-<article class="markdown-body entry-content" itemprop="text">
-  <h2>Resources for Teaching Programming for Artists, Designers and Architects</h2>
+    <div class="container">
+      <h1>Recursos de Programação Criativa</h1>
+      <p>Reunindo nossos recursos num ponto só.</p>
+ 
+      <ul id="tab" class="nav nav-tabs">
+        <li class="active"><a href="#recursos" data-toggle="tab">Recursos</a></li>
+        <li><a href="#ferramentas" data-toggle="tab">Ferramentas</a></li>
+
+        <li><a href="#eventos" data-toggle="tab">Eventos</a></li>
+        <li><a href="#pessoas" data-toggle="tab">Pessoas</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="recursos">
+          <h2>Recursos de Aprendizado</h2>
+          <p>Pendente: reunir os recrusos do <a href="README.md">README</a></p>
+          <div id='tabela-recursos'></div>
+        </div>
+        <div class="tab-pane fade" id="ferramentas">
+            <h2>Resources for Teaching Programming for Artists, Designers and Architects</h2>
   <h3>Host Platforms & Languages</h3>
-<p><a href="https://github.com/villares/Resources-for-teaching-programming">CSV tables on GitHub</a></p>
-<p><strong>Please consider feedback and/or a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HCGAKACDMVNV2">small donation</a>!</strong></p>
-</article>
-      
-      <div id='table-container'></div>
-
-    </div><!-- /.container -->
-
-    <footer class='footer'>
-      <div class='container-fluid'>
-        <hr />
-        <p>Copyright (c) 2014-2017 Alexandre B A Villares (<a href="https://github.com/villares">github.com/villares</a>)<br>
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License<br>
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA-4.0 License</a></p>
-
-        <hr />
-        <p class='pull-right'><a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a> by <a href='http://derekeder.com'>Derek Eder</a></p>
+  <p>Pendente: passar para português</p>
+          <div id='tabela-ferramentas'></div>
+        </div>
+        <div class="tab-pane fade" id="eventos">
+          <hr><h2>Pendente</h2><hr>
+        </div>
+                <div class="tab-pane fade" id="pessoas">
+          <hr><h2>Pendente</h2><hr>
+        </div>
       </div>
-    </footer>
+
+      
+       <h2>Agradecimentos</h2>
+        <ul>
+          <li>Alexandre B A Villares - <a href="https://github.com/villares">github.com/villares</a></li>
+            <li>Nicholas Frota - <a href="https://nonlinear.nyc">nonlinear.nyc</a></li>
+            <li>Derek Eder, pelo <a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a></li>
+          </ul>
+          <h2>Licensa e Doações</h2>
+          <ul>
+            <li>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License<br>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA-4.0 License</a></li>
+     <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HCGAKACDMVNV2">Doações</a></li>
+        </ul>
+
+    </div>
+
+   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -65,8 +90,16 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/recursos.csv',
-        element: 'table-container', 
+        csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/recursos.csv',
+        element: 'tabela-recursos', 
+        allow_download: true,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": false},
+        custom_formatting: [[8, format_link]]
+      });
+       CsvToHtmlTable.init({
+        csv_path: 'https://raw.githubusercontent.com/villares/Resources-for-teaching-programming/master/I%20-%20Host%20platforms%20%26%20languages.csv',
+        element: 'tabela-ferramentas', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
