@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Host Platforms and Languages</title>
+    <meta name="author" content="Alexandre B A Villares">
+    <meta content="Resources for Teaching Programming" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container-fluid">
+<article class="markdown-body entry-content" itemprop="text">
+  <h2>Resources for Teaching Programming for Artists, Designers and Architects</h2>
+  <h3>Host Platforms & Languages</h3>
+<p><a href="https://github.com/villares/Resources-for-teaching-programming">CSV tables on GitHub</a></p>
+<p><strong>Please consider feedback and/or a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HCGAKACDMVNV2">small donation</a>!</strong></p>
+</article>
+      
+      <div id='table-container'></div>
+
+    </div><!-- /.container -->
+
+    <footer class='footer'>
+      <div class='container-fluid'>
+        <hr />
+        <p>Copyright (c) 2014-2017 Alexandre B A Villares (<a href="https://github.com/villares">github.com/villares</a>)<br>
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License<br>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA-4.0 License</a></p>
+
+        <hr />
+        <p class='pull-right'><a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a> by <a href='http://derekeder.com'>Derek Eder</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+
+
+    <script type="text/javascript">
+      function format_link(linkText){
+        if (linkText) {
+          link = linkText.replace(/ *\[[^)]*\] */g, "");
+          return "<a href='http://" + link + "' target='_blank'>" + linkText + "</a>";
+        } else {
+          return "";
+        }
+      }
+
+      CsvToHtmlTable.init({
+        csv_path: 'https://raw.githubusercontent.com/villares/Resources-for-teaching-programming/master/II%20-%20Books%20%26%20References.csv',
+        element: 'table-container', 
+        allow_download: true,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": false},
+        custom_formatting: [[8, format_link]]
+      });
+    </script>
+  </body>
+</html>
