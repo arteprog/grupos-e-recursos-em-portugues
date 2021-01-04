@@ -66,7 +66,7 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, header.header .dropdown-toggle, h3, h4, h5, h6 {
+h1, h2, h3, header.header .dropdown-toggle, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -296,7 +296,7 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, header.header .dropdown-toggle, h3, h4, h5, h6,
+h1, h2, h3, header.header .dropdown-toggle, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -305,10 +305,10 @@ h1, h2, header.header .dropdown-toggle, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2.5rem; }
 
-h2, header.header .dropdown-toggle, .h2 {
+h2, .h2 {
   font-size: 2rem; }
 
-h3, .h3 {
+h3, header.header .dropdown-toggle, .h3 {
   font-size: 1.75rem; }
 
 h4, .h4 {
@@ -7547,13 +7547,14 @@ a.text-dark:hover, a.text-dark:focus {
 
   p,
   h2,
-  header.header .dropdown-toggle,
-  h3 {
+  h3,
+  header.header .dropdown-toggle {
     orphans: 3;
     widows: 3; }
 
-  h2, header.header .dropdown-toggle,
-  h3 {
+  h2,
+  h3,
+  header.header .dropdown-toggle {
     page-break-after: avoid; }
 
   @page {
@@ -15364,11 +15365,37 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   margin: 30px 0; }
 
-header.header .dropdown-toggle {
-  text-transform: capitalize;
-  color: black;
-  border: solid 1px #ccc;
-  padding: 10px 20px; }
+header.header {
+  margin-bottom: 20px;
+  text-transform: capitalize; }
+  header.header .title, header.header .dropdown {
+    display: inline-block; }
+  header.header .dropdown a {
+    color: black;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out; }
+    header.header .dropdown a:hover {
+      text-decoration: none; }
+  header.header .dropdown-toggle {
+    color: black;
+    border: solid 1px #ccc;
+    padding: 10px 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+  header.header .dropdown-menu a {
+    display: block;
+    padding: 10px 20px; }
+    header.header .dropdown-menu a:hover {
+      background-color: #eee; }
 
 @font-face {
   font-family: glyphicons-halflings-regular;

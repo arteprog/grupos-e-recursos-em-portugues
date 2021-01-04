@@ -2,11 +2,35 @@ body {
 	margin: $gap3 0;
 }
 header.header {
+	margin-bottom: $gap2;
+	text-transform: capitalize;
+.title, .dropdown {
+	display: inline-block;
+}
+	.dropdown {
+		a {
+			color: black;
+			@include transition;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 	.dropdown-toggle {
-		@extend h2;
-		text-transform: capitalize;
+		@extend h3;
+		
 		color: black;
 		border: solid 1px #ccc;
 		padding: $gap $gap2;
+		@include radius(2px);
+	}
+	.dropdown-menu {
+		a {
+			display: block;
+			padding: $gap $gap2;
+			&:hover {
+				background-color: #eee;
+			}
+		}
 	}
 }
