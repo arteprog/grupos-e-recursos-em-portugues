@@ -1,0 +1,12 @@
+body {
+	margin: $gap3 0;
+}
+header.header {
+	.dropdown-toggle {
+		@extend h2;
+		text-transform: capitalize;
+		color: black;
+		border: solid 1px #ccc;
+		padding: $gap $gap2;
+	}
+}

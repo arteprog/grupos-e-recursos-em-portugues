@@ -66,7 +66,7 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, header.header .dropdown-toggle, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -296,7 +296,7 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, h3, h4, h5, h6,
+h1, h2, header.header .dropdown-toggle, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2.5rem; }
 
-h2, .h2 {
+h2, header.header .dropdown-toggle, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
@@ -7547,11 +7547,12 @@ a.text-dark:hover, a.text-dark:focus {
 
   p,
   h2,
+  header.header .dropdown-toggle,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  h2,
+  h2, header.header .dropdown-toggle,
   h3 {
     page-break-after: avoid; }
 
@@ -15360,6 +15361,15 @@ a.text-dark:hover, a.text-dark:focus {
     -ms-transform-origin: center bottom;
     -o-transform-origin: center bottom;
     transform-origin: center bottom; } }
+body {
+  margin: 30px 0; }
+
+header.header .dropdown-toggle {
+  text-transform: capitalize;
+  color: black;
+  border: solid 1px #ccc;
+  padding: 10px 20px; }
+
 @font-face {
   font-family: glyphicons-halflings-regular;
   src: url("./fonts/glyphicons-halflings-regular.eot");
