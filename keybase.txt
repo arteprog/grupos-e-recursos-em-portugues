@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nonlinear
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://praxis.nyc
+  * I am nonlinear (https://keybase.io/nonlinear) on keybase.
+  * I have a public key ASBRAq6LOWzrNWadWoJsJe0qp_s9TaS1Oe6aKKp6KAJcogo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fbaa8dd6fe35134b7b30a5a6c1ea1a324b2846e62f490e3b8c18ea790d8bfc730a",
+      "host": "keybase.io",
+      "kid": "01205102ae8b396ceb35669d5a826c25ed2aa7fb3d4da4b539ee9a28aa7a28025ca20a",
+      "uid": "bd56a60dfd71cf1c1230d9468090f100",
+      "username": "nonlinear"
+    },
+    "merkle_root": {
+      "ctime": 1579547544,
+      "hash": "d6518aaac8ef1e5e7e3333a095ceecae4daa20f7e1b04ce600d1639164d3cc2f20ef3a5b84ba146b16585b1929f852d4aafca3f583894a64a385cadb6151b7de",
+      "hash_meta": "413732d61b5bf5d3bf4505dc8c221d801f6eedd8b62eaf184662c6687b37e165",
+      "seqno": 14299398
+    },
+    "service": {
+      "entropy": "6Chu0pTdcK+cT3VVmjMhs5bG",
+      "hostname": "praxis.nyc",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579547589,
+  "expire_in": 504576000,
+  "prev": "fc9d853eb586fb10ac7c98b495d57e29945f93f4cae1628a90c181dabd58f415",
+  "seqno": 93,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgUQKuizls6zVmnVqCbCXtKqf7PU2ktTnumiiqeigCXKIKp3BheWxvYWTESpcCXcQg/J2FPrWG+xCsfJi0ldV+KZRfk/TK4WKKkMGB2r1Y9BXEIGbHGASV7gwd5uMuQAN3rkpCBa6NRigOHpMIjp/QdOs6AgHCo3NpZ8RActNonLNkb9sp7tk9wBJqZ/n+ecHJuY/k50aQ5TJnOT/RPwP5e15zkXkmpvxl3Zii4z/fTp54bq32qgV8L902CKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDWk4i9DOT8eghoJX02SpE2VrWJz/qFbG7RJkt6OOErco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nonlinear
+
+==================================================================

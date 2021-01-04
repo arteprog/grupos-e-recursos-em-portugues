@@ -1,0 +1,19 @@
+<div class="event wow" id="{{ site.data.drawing.VCALENDAR[0].VEVENT[3].DTSTAMP | date_to_long_string }}">
+
+  <div class="content">
+
+    <p class="header"><span class="date">{{ site.data.drawing.VCALENDAR[0].VEVENT[3].DTSTAMP | date_to_long_string }} @
+        10PM
+      </span><br>
+      <span class="title">{{ site.data.drawing.VCALENDAR[0].VEVENT[3].SUMMARY }}</span>
+      <p>{{ site.data.drawing.VCALENDAR[0].VEVENT[3].DESCRIPTION | replace: "\n", "<br>" | replace: "\", "" }}</p>
+  </div>
+  <footer class="actions">
+    <p class="place">
+      {{ site.data.drawing.VCALENDAR[0].VEVENT[3].LOCATION  | replace: "\n", "<br>" | replace: "\", "" }}</p>
+    <a href="https://google.com/maps/search/{{ site.data.drawing.VCALENDAR[0].VEVENT[3].LOCATION }}"
+      class="btn btn-primary">View in Map</a>
+    <a href="#" class="btn btn-primary">View Original</a>
+    <a href="#" class="btn btn-primary">Invite Friend</a>
+  </footer>
+</div>

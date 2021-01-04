@@ -1,0 +1,122 @@
+<nav id="navigation">
+  <div class="item">
+
+    <button class="collapsed" type="button" data-toggle="collapse" data-target="#study" aria-expanded="false"
+      aria-controls="study">study</button>
+    <div id="study" class="collapse" data-parent="#navigation">
+      <ul>
+        {% for post in site.categories.study %}
+        {% if post.status contains "latest" %}
+        <li class="latest cover" style="background-image: url({{'/assets/images/' | prepend: site.baseurl }}{{ post.cover }})"> <a
+            href="{{ post.url | prepend: site.baseurl }}">
+            <span>Latest:</span>
+            <span class="main">{{ post.title }}</span>
+            <span class="slogan">{{ post.description }}</span>
+          </a>
+        </li>
+        {% endif %}
+         {% if post.status contains "ongoing" %}
+        <li class="latest cover" style="background-image: url({{'/assets/images/' | prepend: site.baseurl }}{{ post.cover }})"> <a
+            href="{{ post.url | prepend: site.baseurl }}">
+            <span>Latest:</span>
+            <span class="main">{{ post.title }}</span>
+            <span class="slogan">{{ post.description }}</span>
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        <li class="previous">
+          <p>Previous:</p>
+        </li>
+        {% for post in site.categories.study %}
+        {% if post.status contains "previous" %}
+        <li class="previous"> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+
+
+    </div>
+
+    <div class="item">
+
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#slide" aria-expanded="false"
+        aria-controls="slide">slides</button>
+
+
+      <div id="slide" class="collapse" aria-labelledby="headingThree" data-parent="#navigation">
+        <ul>
+          {% for post in site.categories.slide %}
+          {% if post.status contains "public" %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}" target="slide">
+         {{ post.title }}
+            <span class="description">{{ post.description }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="item">
+
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#events" aria-expanded="false"
+        aria-controls="events">events</button>
+
+
+      <div id="events" class="collapse" data-parent="#navigation">
+        <ul>
+          <li> <a href="#">Art and Culture</a></li>
+          <li><a href="/drawing">Drawing</a></li>
+        </ul>
+
+      </div>
+    </div> -->
+    <div class="item">
+
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#article" aria-expanded="false"
+        aria-controls="article">articles</button>
+
+
+      <div id="article" class="collapse" aria-labelledby="headingThree" data-parent="#navigation">
+        <ul>
+          {% for post in site.categories.article %}
+          {% if post.status contains "public" %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+       <div class="item">
+
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#consulting" aria-expanded="false"
+        aria-controls="consulting">consulting</button>
+
+
+      <div id="consulting" class="collapse" aria-labelledby="headingThree" data-parent="#navigation">
+        <ul>
+          {% for post in site.categories.consulting %}
+          {% if post.status contains "public" %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="item">
+
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false"
+        aria-controls="about">
+        about</button>
+
+
+      <div id="about" class="collapse" aria-labelledby="headingThree" data-parent="#navigation">
+
+         <p>We're a group of queer people gathering to understand challenges and opportunities of our digital society.
+         </p>
+      </div>
+    </div> -->
+
+
+</nav>

@@ -1,0 +1,148 @@
+<html class="">
+<head>
+	
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="/grupos-e-recursos-em-portugues/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="/grupos-e-recursos-em-portugues/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="/grupos-e-recursos-em-portugues/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/grupos-e-recursos-em-portugues/assets/favicons/site.webmanifest">
+
+	<link rel="mask-icon" href="/grupos-e-recursos-em-portugues/assets/favicons/safari-pinned-tab.svg" color="#800080">
+	<link rel="shortcut icon" href="/grupos-e-recursos-em-portugues/assets/favicons/favicon.ico">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-TileColor" content="#800080">
+	<meta name="msapplication-config" content="/grupos-e-recursos-em-portugues/assets/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#800080">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><title>recursos</title>
+	<meta name=" title" content=recursos>
+	<meta name="description" content="lorem ipsum">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://arteprog.space/grupos-e-recursos-em-portugues">
+	
+	<meta property="og:title" content=recursos>
+	
+	
+	<meta property="og:description" content="lorem ipsum">
+	
+	 <!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://arteprog.space/grupos-e-recursos-em-portugues">
+	
+	<meta property="twitter:title" content=recursos>
+	
+	
+	<meta property="twitter:description" content="lorem ipsum">
+	
+	  
+		<link
+		rel="stylesheet" href="/grupos-e-recursos-em-portugues/assets/main.css">
+
+
+
+
+</head>
+
+
+<body id="public">
+
+	<div class="container">
+		<header class="header">
+		<h2>Recursos de Programação Criativa</h2>
+	
+			<div class="dropdown">
+		 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			    recursos
+			  </a>
+			  <ul class="dropdown-menu">
+			  	 
+    <li>
+      <a href="/grupos-e-recursos-em-portugues/recursos/">recursos</a>
+    </li>
+  
+    <li>
+      <a href="/grupos-e-recursos-em-portugues/pessoas/">pessoas</a>
+    </li>
+  
+    <li>
+      <a href="/grupos-e-recursos-em-portugues/ferramentas/">ferramentas</a>
+    </li>
+  
+    <li>
+      <a href="/grupos-e-recursos-em-portugues/eventos/">eventos</a>
+    </li>
+  
+			 
+			  </ul>
+			</div>
+		</header>
+
+			<div id='tabela'></div>
+	 
+	  <h2>Agradecimentos</h2>
+        <ul>
+          <li>Alexandre B A Villares - <a href="https://github.com/villares">github.com/villares</a></li>
+            <li>Nicholas Frota - <a href="https://nonlinear.nyc">nonlinear.nyc</a></li>
+            <li>Derek Eder, pelo <a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a></li>
+          </ul>
+          <h2>Licensa e Doações</h2>
+          <ul>
+            <li>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License<br>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA-4.0 License</a></li>
+     <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HCGAKACDMVNV2">Doações</a></li>
+        </ul>
+	  
+		
+	</div>
+
+
+	<script src="/grupos-e-recursos-em-portugues/assets/vendor/p5.min.js"></script>
+	<script src="/grupos-e-recursos-em-portugues/assets/vendor/jquery.min.js"></script>
+	<script src="/grupos-e-recursos-em-portugues/assets/vendor/popper.min.js"></script>
+	<script src="/grupos-e-recursos-em-portugues/assets/vendor/bootstrap.min.js"></script>
+<script src="/grupos-e-recursos-em-portugues/assets/vendor/jquery.csv.min.js"></script>
+<script src="/grupos-e-recursos-em-portugues/assets/vendor/jquery.dataTables.min.js"></script>
+<script src="/grupos-e-recursos-em-portugues/assets/vendor/dataTables.bootstrap.js"></script>
+<script src="/grupos-e-recursos-em-portugues/assets/vendor/csv_to_html_table.js"></script>
+	<script>
+		   function format_link(link){
+        if (link)
+          return "<a href='http://" + link + "' target='_blank'>" + link + "</a>";
+        else
+          return "";
+      }
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+		$('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+		.on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+				$(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+				if (!$(".popover:hover").length) {
+					$(_this).popover("hide");
+				}
+			}, 300);
+		});
+	</script>
+	<script>
+		CsvToHtmlTable.init({
+csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/recursos.csv',
+element: 'tabela', 
+allow_download: true,
+csv_options: {separator: ',', delimiter: '"'},
+datatables_options: {"paging": false},
+custom_formatting: [[8, format_link]]
+});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+---
+layout: default
+title: eventos
+slug: eventos
+status: public
+description: lorem ipsum
+date: 2021-01-04
+permalink: /:slug/
+---
+CsvToHtmlTable.init({
+csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/eventos.csv',
+element: 'tabela', 
+allow_download: true,
+csv_options: {separator: ',', delimiter: '"'},
+datatables_options: {"paging": false},
+custom_formatting: [[8, format_link]]
+});

@@ -1,0 +1,79 @@
+// (\_/)   nonlinear tile
+// (`ㅅ`)づ extended from PatternBolt https://github.com/buseca/patternbolt
+// (")(")  more at nonlinear.nyc/tile
+
+@mixin tile($tile, $color: #000, $size: 200px, $mask: "none") {
+  @if unitless($size) {
+    @warn "Assuming PatternBolt background-size `#{$size}` to be in pixels.";
+
+    $size: $size + 0px;
+  }
+
+  $background-image: null;
+  @if $tile == "cross-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ecross-a%3C/title%3E%3Cpath d='M4 0v4H0v3h4v4h3.001V7H11V4H7.001V0H4zm18 18v4h-4v3h4v4h3.001v-4H29v-3h-3.999v-4H22z' fill='" + $color + "' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+  @if $tile == "cross-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ecross-b%3C/title%3E%3Cpath d='M12 8H8v4H4V8H0V4h4V0h4v4h4v4zm18 18h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4z' fill='" + $color + "' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
+  @if $tile == "cross-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ecross-c%3C/title%3E%3Cpath d='M12 9H9v3H3V9H0V3h3V0h6v3h3v6zm18 18h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6z' fill='" + $color + "' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
+  @if $tile == "dots-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Edots-a%3C/title%3E%3Cg fill='" + $color + "' fill-rule='nonzero'%3E%3Cpath d='M18 23c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM0 5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM0 41c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM36 5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM36 41c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+  @if $tile == "dots-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Edots-b%3C/title%3E%3Cg fill='" + $color + "' fill-rule='nonzero'%3E%3Cpath d='M18 26c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM0 8c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM0 44c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM36 8c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM36 44c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z'/%3E%3C/g%3E%3C/svg%3E");
+}
+  @if $tile == "dots-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Edots-c%3C/title%3E%3Cg fill='" + $color + "' fill-rule='nonzero'%3E%3Cpath d='M18 29c-6.1 0-11-4.9-11-11S11.9 7 18 7s11 4.9 11 11-4.9 11-11 11zM0 11c-6.1 0-11-4.9-11-11s4.9-11 11-11S11-6.1 11 0 6.1 11 0 11zM0 47c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11S6.1 47 0 47zM36 11c-6.1 0-11-4.9-11-11s4.9-11 11-11S47-6.1 47 0s-4.9 11-11 11zM36 47c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11z'/%3E%3C/g%3E%3C/svg%3E");
+}
+  @if $tile == "grid-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Egrid-a%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M6 0v6H0V0z'/%3E%3C/svg%3E");
+}
+  @if $tile == "grid-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Egrid-b%3C/title%3E%3Crect fill='" + $color + "' fill-rule='nonzero' transform='rotate(90 3 3)' width='6' height='6' rx='3'/%3E%3C/svg%3E");
+}
+  @if $tile == "grid-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Egrid-c%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M4.243 0l4.242 4.243-4.242 4.243L0 4.243z'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-a%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M0 0h36v3.6H0z'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-b%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M0 0h36v10.8H0z'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-c%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M0 0h36v18H0z'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-down-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-down-a%3C/title%3E%3Cg fill='" + $color + "' fill-rule='nonzero'%3E%3Cpath d='M36.1 0H34l2.1 2.1zM0 34v2.1h2.1z'/%3E%3Cpath d='M0 34v2.1h2.1zM36 33.9V36h-2.1L0 2.1V0h2.1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+  @if $tile == "lines-down-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-down-b%3C/title%3E%3Cpath d='M6.3 0H0v6.3L29.7 36H36v-6.3L6.3 0zM36 6.3L29.7 0H36v6.3zM6.3 36H0v-6.3L6.3 36z' fill='" + $color + "' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-down-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-down-c%3C/title%3E%3Cpath d='M10.5 0H0v10.5L25.5 36H36V25.5L10.5 0zM0 36V25.5L10.5 36H0zm36-25.5L25.5 0H36v10.5z' fill='" + $color + "' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-up-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-up-a%3C/title%3E%3Cg fill='" + $color + "' fill-rule='nonzero'%3E%3Cpath d='M36.1 36H34l2.1-2.1zM0 2V-.1h2.1z'/%3E%3Cpath d='M0 2V-.1h2.1zM36 2.1V0h-2.1L0 33.9V36h2.1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+  @if $tile == "lines-up-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-up-b%3C/title%3E%3Cpath d='M6.3 36H0v-6.3L29.7 0H36v6.3L6.3 36zM36 29.7L29.7 36H36v-6.3zM6.3 0H0v6.3L6.3 0z' fill='" + $color + "' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-up-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-up-c%3C/title%3E%3Cpath d='M10.5 36H0V25.5L25.5 0H36v10.5L10.5 36zM0 0v10.5L10.5 0H0zm36 25.5L25.5 36H36V25.5z' fill='" + $color + "' fill-rule='nonzero'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-vert-a" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-vert-a%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M3.8-.2v36H.2v-36z'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-vert-b" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-vert-b%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M10.4.4v36H-.4V.4z'/%3E%3C/svg%3E");
+}
+  @if $tile == "lines-vert-c" {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Elines-vert-c%3C/title%3E%3Cpath fill='" + $color + "' fill-rule='nonzero' d='M18 0v36H0V0z'/%3E%3C/svg%3E");
+}
+  position: relative;
+  z-index: 1;
+  background-size: $size;
+}

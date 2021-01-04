@@ -1,0 +1,90 @@
+---
+layout: default
+---
+<html class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}">
+<head>
+	{% include head.html %}
+
+</head>
+
+
+<body id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
+
+	<div class="container">
+		<header class="header">
+		<h2>{{ site.title }}</h2>
+	
+			<div class="dropdown">
+		 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			    {{ page.title }}
+			  </a>
+			  <ul class="dropdown-menu">
+			  	 {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+			 
+			  </ul>
+			</div>
+		</header>
+
+			<div id='tabela'></div>
+	 
+	  <h2>Agradecimentos</h2>
+        <ul>
+          <li>Alexandre B A Villares - <a href="https://github.com/villares">github.com/villares</a></li>
+            <li>Nicholas Frota - <a href="https://nonlinear.nyc">nonlinear.nyc</a></li>
+            <li>Derek Eder, pelo <a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a></li>
+          </ul>
+          <h2>Licensa e Doações</h2>
+          <ul>
+            <li>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License<br>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA-4.0 License</a></li>
+     <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HCGAKACDMVNV2">Doações</a></li>
+        </ul>
+	  
+		
+	</div>
+
+
+	<script src="{{'/assets/vendor/p5.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/jquery.csv.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/jquery.dataTables.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/dataTables.bootstrap.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/csv_to_html_table.js' | prepend: site.baseurl}}"></script>
+	<script>
+		   function format_link(link){
+        if (link)
+          return "<a href='http://" + link + "' target='_blank'>" + link + "</a>";
+        else
+          return "";
+      }
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+		$('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+		.on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+				$(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+				if (!$(".popover:hover").length) {
+					$(_this).popover("hide");
+				}
+			}, 300);
+		});
+	</script>
+	<script>
+		{{ content }}
+	</script>
+</body>
+
+</html>

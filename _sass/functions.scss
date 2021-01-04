@@ -1,0 +1,92 @@
+$color-foreground: black;
+$color-background: white;
+$color-accent: purple;
+
+$gap: 10px;
+$gap2: $gap * 2;
+$gap3: $gap * 3;
+$gap4: $gap * 4;
+$gap5: $gap * 5;
+$gap6: $gap * 6;
+$gap7: $gap * 7;
+$gaphalf: $gap / 2;
+
+@mixin highlight($color: $color-background, $shadow: 10px, $block: true, $the-gap: $gap2) {
+    background-color: $color;
+  display: inline;
+  box-shadow: $shadow 0 0 $color,
+  -$shadow 0 0 $color;
+  box-decoration-break: clone;
+ @if $block == true {
+    & + &:before {
+    display: block;
+    height: $the-gap;
+    content: "";
+  }
+ }
+}
+
+@mixin highlight-old(
+  $bg: white, 
+  $gap: 10px, 
+$spacing: 20px, 
+$top: 10px, 
+$bottom: 5px, 
+$break: true
+) {
+  display: inline;
+  background: $bg;
+  box-shadow: $gap 0 0 $bg,
+    -$gap 0 0 $bg;
+  padding-bottom: $bottom;
+  padding-top: $top;
+  box-decoration-break: clone;
+
+  @if $break==true {
+    &::after {
+      content: "";
+      display: block;
+      height: $spacing;
+      background: none !important;
+    }
+  }
+}
+
+@mixin scaffold($width: 10px, $left: -40px, $top: -30px, $color: $color-1) {
+  &::before {
+    content: '';
+    display: block;
+    width: $width;
+    margin-left: $left;
+    margin-top: $top;
+    background-color: $color;
+    position: absolute;
+  }
+}
+
+
+@mixin fade($x: 0, $y: 0, $z: 0, $duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(fade);
+  @include duration($duration);
+  @include function($function);
+  @include delay($delay);
+  @include count($count);
+  @include visibility($visibility);
+  @include fill-mode($fill);
+
+  @at-root {
+    @include keyframes(fade) {
+      0% {
+        opacity: 0;
+        transform: translate3d($x, $y, $z);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://arteprog.space/grupos-e-recursos-em-portugues/feed.xml" rel="self" type="application/atom+xml" /><link href="https://arteprog.space/grupos-e-recursos-em-portugues/" rel="alternate" type="text/html" /><updated>2021-01-04T14:44:27-05:00</updated><id>https://arteprog.space/grupos-e-recursos-em-portugues/feed.xml</id><title type="html">Recursos de Programação Criativa</title><subtitle>lorem ipsum</subtitle><entry><title type="html">eventos</title><link href="https://arteprog.space/grupos-e-recursos-em-portugues/eventos/" rel="alternate" type="text/html" title="eventos" /><published>2021-01-04T00:00:00-05:00</published><updated>2021-01-04T00:00:00-05:00</updated><id>https://arteprog.space/grupos-e-recursos-em-portugues/eventos</id><content type="html" xml:base="https://arteprog.space/grupos-e-recursos-em-portugues/eventos/">CsvToHtmlTable.init({
+csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/eventos.csv',
+element: 'tabela', 
+allow_download: true,
+csv_options: {separator: ',', delimiter: '&quot;'},
+datatables_options: {&quot;paging&quot;: false},
+custom_formatting: [[8, format_link]]
+});</content><author><name></name></author><summary type="html">CsvToHtmlTable.init({ csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/eventos.csv', element: 'tabela', allow_download: true, csv_options: {separator: ',', delimiter: '&quot;'}, datatables_options: {&quot;paging&quot;: false}, custom_formatting: [[8, format_link]] });</summary></entry><entry><title type="html">ferramentas</title><link href="https://arteprog.space/grupos-e-recursos-em-portugues/ferramentas/" rel="alternate" type="text/html" title="ferramentas" /><published>2021-01-04T00:00:00-05:00</published><updated>2021-01-04T00:00:00-05:00</updated><id>https://arteprog.space/grupos-e-recursos-em-portugues/ferramentas</id><content type="html" xml:base="https://arteprog.space/grupos-e-recursos-em-portugues/ferramentas/">CsvToHtmlTable.init({
+csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/ferramentas.csv',
+element: 'tabela', 
+allow_download: true,
+csv_options: {separator: ',', delimiter: '&quot;'},
+datatables_options: {&quot;paging&quot;: false},
+custom_formatting: [[8, format_link]]
+});</content><author><name></name></author><summary type="html">CsvToHtmlTable.init({ csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/ferramentas.csv', element: 'tabela', allow_download: true, csv_options: {separator: ',', delimiter: '&quot;'}, datatables_options: {&quot;paging&quot;: false}, custom_formatting: [[8, format_link]] });</summary></entry><entry><title type="html">pessoas</title><link href="https://arteprog.space/grupos-e-recursos-em-portugues/pessoas/" rel="alternate" type="text/html" title="pessoas" /><published>2021-01-04T00:00:00-05:00</published><updated>2021-01-04T00:00:00-05:00</updated><id>https://arteprog.space/grupos-e-recursos-em-portugues/pessoas</id><content type="html" xml:base="https://arteprog.space/grupos-e-recursos-em-portugues/pessoas/">CsvToHtmlTable.init({
+csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/pessoas.csv',
+element: 'tabela', 
+allow_download: true,
+csv_options: {separator: ',', delimiter: '&quot;'},
+datatables_options: {&quot;paging&quot;: false},
+custom_formatting: [[8, format_link]]
+});</content><author><name></name></author><summary type="html">CsvToHtmlTable.init({ csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/pessoas.csv', element: 'tabela', allow_download: true, csv_options: {separator: ',', delimiter: '&quot;'}, datatables_options: {&quot;paging&quot;: false}, custom_formatting: [[8, format_link]] });</summary></entry><entry><title type="html">recursos</title><link href="https://arteprog.space/grupos-e-recursos-em-portugues/recursos/" rel="alternate" type="text/html" title="recursos" /><published>2021-01-04T00:00:00-05:00</published><updated>2021-01-04T00:00:00-05:00</updated><id>https://arteprog.space/grupos-e-recursos-em-portugues/recursos</id><content type="html" xml:base="https://arteprog.space/grupos-e-recursos-em-portugues/recursos/">CsvToHtmlTable.init({
+csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/recursos.csv',
+element: 'tabela', 
+allow_download: true,
+csv_options: {separator: ',', delimiter: '&quot;'},
+datatables_options: {&quot;paging&quot;: false},
+custom_formatting: [[8, format_link]]
+});</content><author><name></name></author><summary type="html">CsvToHtmlTable.init({ csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/recursos.csv', element: 'tabela', allow_download: true, csv_options: {separator: ',', delimiter: '&quot;'}, datatables_options: {&quot;paging&quot;: false}, custom_formatting: [[8, format_link]] });</summary></entry></feed>

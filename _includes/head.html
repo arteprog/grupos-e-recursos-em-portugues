@@ -1,0 +1,49 @@
+
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="{{'/assets/favicons/apple-touch-icon.png' | prepend: site.baseurl }}">
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="{{'/assets/favicons/favicon-32x32.png' | prepend: site.baseurl }}">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="{{'/assets/favicons/favicon-16x16.png' | prepend: site.baseurl }}">
+	<link rel="manifest" href="{{'/assets/favicons/site.webmanifest' | prepend: site.baseurl }}">
+
+	<link rel="mask-icon" href="{{'/assets/favicons/safari-pinned-tab.svg' | prepend: site.baseurl }}" color="#800080">
+	<link rel="shortcut icon" href="{{'/assets/favicons/favicon.ico' | prepend: site.baseurl }}">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-TileColor" content="#800080">
+	<meta name="msapplication-config" content="{{'/assets/favicons/browserconfig.xml' | prepend: site.baseurl }}">
+	<meta name="theme-color" content="#800080">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{%- if page.title -%}
+	<title>{{ page.title }}</title>
+	<meta name=" title" content={{ page.title }}>
+	{%- endif -%}
+	{%if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}">
+	{%if page.title %}
+	<meta property="og:title" content={{ page.title }}>
+	{% endif %}
+	{%if page.description %}
+	<meta property="og:description" content="{{ page.description }}">
+	{% endif %}
+	{%if page.image %}
+	<meta property="og:image" content={{'/assets/images/' | prepend: site.baseurl }}{{ page.image }}> {% endif %} <!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="{{ site.url }}{{ site.baseurl }}">
+	{%if page.title %}
+	<meta property="twitter:title" content={{ page.title }}>
+	{% endif %}
+	{%if page.description %}
+	<meta property="twitter:description" content="{{ page.description }}">
+	{% endif %}
+	{%if page.cover %}
+	<meta property="twitter:image" content={{'/assets/images/' | prepend: site.baseurl }}{{ page.cover }}> {% endif %} {%if page.open %}
+		<meta property="twitter:image" content={{'/assets/images/' | prepend: site.baseurl }}{{ page.open }}> {% endif %} 
+		<link
+		rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl }}">
+
+

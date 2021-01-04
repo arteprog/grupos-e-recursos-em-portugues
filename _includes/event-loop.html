@@ -1,0 +1,20 @@
+{% for event in site.data.drawing.VCALENDAR[0].VEVENT %}
+<div class="event wow" id="{{ event.DTSTAMP | date_to_long_string }}">
+
+  <div class="content">
+
+    <p class="header"><span class="date">{{ event.DTSTAMP | date_to_long_string }} @
+        10PM
+      </span><br>
+      <span class="title">{{ event.SUMMARY }}</span>
+      <p>{{ event.DESCRIPTION | replace: "\n", "<br>" | replace: "\", "" }}</p>
+  </div>
+  <footer class="actions">
+    <!-- <p class="place">
+      {{ event.LOCATION  | replace: "\n", "<br>" | replace: "\", "" }}</p> -->
+    <a href="https://google.com/maps/search/{{ event.LOCATION }}" class="btn btn-primary">View in Map</a>
+    <a href="#" class="btn btn-primary">View Original</a>
+    <a href="#" class="btn btn-primary">Invite Friend</a>
+  </footer>
+</div>
+{% endfor %}
