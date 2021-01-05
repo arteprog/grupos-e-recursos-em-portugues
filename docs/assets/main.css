@@ -15499,6 +15499,14 @@ footer.footer {
   @font-face {
     font-family: glyphicons-halflings-regular;
     src: url("./fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); } }
+#tabela-table_wrapper {
+  border-top: solid 1px #ccc;
+  padding-bottom: 10px;
+  overflow: auto; }
+  #tabela-table_wrapper thead {
+    position: sticky !important;
+    top: 0px; }
+
 div.dataTables_length label {
   font-weight: normal;
   text-align: left;

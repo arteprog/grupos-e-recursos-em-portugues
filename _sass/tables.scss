@@ -1,5 +1,15 @@
 // Alert: if font path is NOT `../fonts/`, define  too.
 @include font-face(glyphicons-halflings-regular, './fonts/');
+#tabela-table_wrapper {
+	border-top: solid 1px #ccc;
+	padding-bottom: $gap;
+	overflow: auto;
+	thead {
+		position: sticky !important;
+		top: 0px;
+	}
+}
+
 div.dataTables_length {
 	label {
 		font-weight: normal;
