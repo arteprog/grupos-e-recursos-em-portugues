@@ -7,6 +7,9 @@ description: lorem ipsum
 date: 2021-01-04
 permalink: /:slug/
 ---
+<a class="add" href="mailto:{{ site.email}}?subject=sugestão para {{site.title}}: {{ page.title }}&body=Título: %0D%0ALink: %0D%0ATipo: %0D%0AComeça: %0D%0ACusto: %0D%0ALinguagem: %0D%0ALinguagem de PRogramação: %0D%0ANotas: %0D%0AEnviado por: ">
+	<span class="icon glyphicon-plus"></span>
+</a>
 <script>
 	CsvToHtmlTable.init({
 csv_path: 'https://raw.githubusercontent.com/arteprog/grupos-e-recursos-em-portugues/master/data/pessoas.csv',

@@ -4,15 +4,20 @@
 
 ### Fase 1: Fundações
 
+- [ ]  adicionar email no `_config.yml`
 - [ ]  renomear repo ("network")
 - - [ ]  alterar `baseurl` no `_config.yml`
 - - [ ]  alterar path em cada `_post`
-- - [ ]  alterar redirectno `index.html`
+- - [ ]  alterar redirect no `index.html`
 - [x]  refazer em jekyll
 - [ ]  definir tabelas
 - [ ]  definir colunas, tags
 - [x]  email para sugestoes (prepopulated with columns)
 - [ ] trazer search de volta (css)
+- [ ] criar (ou deletar) pessoas e eventos (sao copia do recursos)
+- - [ ] alterar email para refletir colunas
+- [ ] traduzir colunas de ferramentas
+- - [ ] traduzir tambem no email de sugestao
 - [ ]  definir responsavel pra aprovar emails
 - [ ] reunir dados: [villares/Recursos-para-o-ensino-de-programacao](https://github.com/villares/Recursos-para-o-ensino-de-programacao/blob/master/Bibliografia%20e%20refer%C3%AAncias.csv)
 - [ ] reunir dados: ver abaixo

@@ -1,5 +1,12 @@
 body {
 	margin: $gap3 0;
+	font-size: 13px;
+	background-color: #eee;
+}
+
+tr, td, th {
+	font-size: 13px;
+	border: none !important;
 }
 header.header {
 	margin-bottom: $gap2;
@@ -24,10 +31,10 @@ header.header {
 	}
 	.dropdown-toggle {
 		
-		
+		background-color: white;
 		color: black;
 		border: solid 1px #ccc;
-		padding: $gaphalf $gap2;
+		padding: $gaphalf $gap;
 		@include radius(4px);
 	}
 	.dropdown-menu {
@@ -58,27 +65,28 @@ display: block;
   background-color: black;
   position: fixed;
   @include transition;
-  padding-top: $gap;
+  padding-top: 8px;
 	bottom: 0;
 	right: 0;
 	margin: $gap3;
-	@include opacity(70);
+	@include opacity(60);
 	@include radius(50%);
-	@include shadow(box, 0 1px 3px rgba(0, 0, 0, 0.25));
+	@include shadow(box, 0 5px 2px rgba(0, 0, 0, 0.15));
 	&:hover {
 		@include opacity(100);
+		@include shadow(box, 0 0px 15px rgba(0, 0, 0, 0.5));
 		text-decoration: none;
 	}
 	&:after {
 				font-family: 'glyphicons-halflings-regular';
 				content: "\2b";
+				font-size: 20px;
 			}
 }
 
 footer.footer {
 	background-color: #333;
 	color: #ccc;
-	font-size: 80%;
 	ul, ol {
 		@include reset(list);
 		@include reset(all);
