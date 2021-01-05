@@ -6,6 +6,7 @@
 
 ### Fase 1: Fundações
 
+- [ ]  pq github nao ta montando o jekyll?
 - [ ]  adicionar email no `_config.yml`
 - [ ]  renomear repo ("network")
 - - [ ]  alterar `baseurl` no `_config.yml`
