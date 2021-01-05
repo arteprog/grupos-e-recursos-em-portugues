@@ -15404,13 +15404,6 @@ header.header {
     header.header .dropdown-menu a:hover {
       background-color: #eee; }
 
-.dataTables_filter {
-  position: fixed;
-  right: 0;
-  display: none;
-  top: 0;
-  padding: 20px; }
-
 a.add {
   display: block;
   width: 50px;
@@ -15503,9 +15496,9 @@ footer.footer {
   border-top: solid 1px #ccc;
   padding-bottom: 10px;
   overflow: auto; }
-  #tabela-table_wrapper thead {
-    position: sticky !important;
-    top: 0px; }
+  #tabela-table_wrapper .row:first-of-type {
+    width: 100%;
+    padding-top: 10px; }
 
 div.dataTables_length label {
   font-weight: normal;

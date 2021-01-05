@@ -4,10 +4,11 @@
 	border-top: solid 1px #ccc;
 	padding-bottom: $gap;
 	overflow: auto;
-	thead {
-		position: sticky !important;
-		top: 0px;
+	.row:first-of-type {
+		width: 100%;
+		padding-top: $gap;
 	}
+	
 }
 
 div.dataTables_length {

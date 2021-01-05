@@ -15,7 +15,7 @@
 - [ ]  definir tabelas
 - [ ]  definir colunas, tags
 - [x]  email para sugestoes (prepopulated with columns)
-- [ ] trazer search de volta (css)
+- [x] trazer search de volta (css)
 - [ ] criar (ou deletar) pessoas e eventos (sao copia do recursos)
 - - [ ] alterar email para refletir colunas
 - [ ] traduzir colunas de ferramentas
@@ -31,6 +31,7 @@
 - [ ]  automatic cross linking
 - [ ]  sugestao nao como email, mas form
 - - [ ] abre modal com formulario
+- [ ] repositionar search no header
 - - [ ] sugestao é adicionada ao `csv` automaticamente
 - - [ ] flag para editor revisar (aprovada automaticamente)
 - - [ ] delimitar tags (só pode usar as apresentadas)
