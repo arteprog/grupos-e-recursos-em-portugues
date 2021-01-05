@@ -1,11 +1,32 @@
-# Praxis website
+# TODO
 
-<a href="https://praxis.nyc"><img src="https://praxis.nyc/assets/favicons/apple-touch-icon.png" width="60px" height="60px" /></a>
+### Fase 1: Fundações
 
-### Running it locally
+- [ ]  renomear repo ("network")
+- - [ ]  alterar `baseurl` no `_config.yml`
+- - [ ]  alterar path em cada `_post`
+- - [ ]  alterar redirectno `index.html`
+- [x]  refazer em jekyll
+- [ ]  definir tabelas
+- [ ]  definir colunas, tags
+- [x]  email para sugestoes (prepopulated with columns)
+- [ ]  definir responsavel pra aprovar emails
+- [ ] reunir dados: [villares/Recursos-para-o-ensino-de-programacao](https://github.com/villares/Recursos-para-o-ensino-de-programacao/blob/master/Bibliografia%20e%20refer%C3%AAncias.csv)
+- [ ] reunir dados: [README](http://arteprog.space/grupos-e-recursos-em-portugues/README.md)
 
-You need [node](https://nodejs.org/en/download/) for npm, and [jekyll](https://jekyllrb.com/docs/installation/macos/).
+### Fase 2: Future states
 
-Glone repo, go to folder on terminal and run `make serve`.
+- [ ]  https como link
+- [ ]  link to row
+- [ ]  automatic cross linking
+- [ ]  some automatic suggestion, no email? how?
+- [ ]  tables as categories?
+- [ ]  export events as `.ics` calendar
 
-When it's running, go to [https://localhost:4000](https://localhost:4000) on your browser.
+## Tabelas e Colunas
+
+1. Tecnologias
+2. Recursos (cursos, técnicas)
+3. Eventos (date-based)
+4. Pessoas
+5. ?
