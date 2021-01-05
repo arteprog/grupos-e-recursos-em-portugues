@@ -34,3 +34,30 @@ header.header {
 		}
 	}
 }
+a.add {
+display: block;
+  width: $gap5;
+  height: $gap5; 
+  text-align: center;   
+  border-radius: 50%;
+
+				color: white !important;
+  background-color: black;
+  position: fixed;
+  @include transition;
+  padding-top: $gap;
+	bottom: 0;
+	right: 0;
+	margin: $gap3;
+	@include opacity(70);
+	@include radius(50%);
+	@include shadow(box, 0 1px 3px rgba(0, 0, 0, 0.25));
+	&:hover {
+		@include opacity(100);
+		text-decoration: none;
+	}
+	&:after {
+				font-family: 'glyphicons-halflings-regular';
+				content: "\2b";
+			}
+}
