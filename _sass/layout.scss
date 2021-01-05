@@ -7,6 +7,12 @@ header.header {
 .title, .dropdown {
 	display: inline-block;
 }
+.title {
+	padding-right: $gap;
+}
+.title, .dropdown-toggle {
+	@extend h4;
+}
 	.dropdown {
 		a {
 			color: black;
@@ -17,12 +23,12 @@ header.header {
 		}
 	}
 	.dropdown-toggle {
-		@extend h3;
+		
 		
 		color: black;
 		border: solid 1px #ccc;
-		padding: $gap $gap2;
-		@include radius(2px);
+		padding: $gaphalf $gap2;
+		@include radius(4px);
 	}
 	.dropdown-menu {
 		a {
@@ -33,6 +39,12 @@ header.header {
 			}
 		}
 	}
+}
+.dataTables_filter {
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: $gap2;
 }
 a.add {
 display: block;

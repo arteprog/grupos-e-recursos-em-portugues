@@ -12,11 +12,11 @@ layout: default
 
 	<div class="container">
 		<header class="header">
-		<h2 class="title">{{ site.title }}</h2>
+		
 	
 			<div class="dropdown">
 		 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-			    {{ page.title }}
+			   {{ site.title }}: {{ page.title }}
 			  </a>
 			  <ul class="dropdown-menu">
 			  	 {% for post in site.posts %}
