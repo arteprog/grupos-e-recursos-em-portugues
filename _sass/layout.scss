@@ -43,6 +43,7 @@ header.header {
 .dataTables_filter {
 	position: fixed;
 	right: 0;
+	display: none;
 	top: 0;
 	padding: $gap2;
 }
