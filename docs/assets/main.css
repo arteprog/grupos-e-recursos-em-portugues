@@ -15449,6 +15449,32 @@ a.add {
     font-family: 'glyphicons-halflings-regular';
     content: "\2b"; }
 
+footer.footer {
+  background-color: #333;
+  color: #ccc;
+  font-size: 80%; }
+  footer.footer ul, footer.footer ol {
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none;
+    background: transparent; }
+    footer.footer ul:focus, footer.footer ol:focus {
+      outline-width: 0;
+      outline: none;
+      outline-color: transparent;
+      outline-style: none; }
+    footer.footer ul li:not(:first-of-type), footer.footer ol li:not(:first-of-type) {
+      margin-top: 5px; }
+  footer.footer a {
+    color: #ccc;
+    text-decoration: underline; }
+  footer.footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px 0;
+    grid-gap: 30px; }
+
 @font-face {
   font-family: glyphicons-halflings-regular;
   src: url("./fonts/glyphicons-halflings-regular.eot");

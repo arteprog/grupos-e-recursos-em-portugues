@@ -74,3 +74,28 @@ display: block;
 				content: "\2b";
 			}
 }
+
+footer.footer {
+	background-color: #333;
+	color: #ccc;
+	font-size: 80%;
+	ul, ol {
+		@include reset(list);
+		@include reset(all);
+		li {
+			&:not(:first-of-type) {
+				margin-top: $gaphalf;
+			}
+		}
+	}
+	a {
+		color: #ccc;
+		text-decoration: underline;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: $gap3 0;
+		grid-gap: $gap3;
+	}
+}

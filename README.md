@@ -12,6 +12,7 @@
 - [ ]  definir tabelas
 - [ ]  definir colunas, tags
 - [x]  email para sugestoes (prepopulated with columns)
+- [ ] trazer search de volta (css)
 - [ ]  definir responsavel pra aprovar emails
 - [ ] reunir dados: [villares/Recursos-para-o-ensino-de-programacao](https://github.com/villares/Recursos-para-o-ensino-de-programacao/blob/master/Bibliografia%20e%20refer%C3%AAncias.csv)
 - [ ] reunir dados: ver abaixo
@@ -21,7 +22,11 @@
 - [ ]  https como link
 - [ ]  link to row
 - [ ]  automatic cross linking
-- [ ]  some automatic suggestion, no email? how?
+- [ ]  sugestao nao como email, mas form
+- - [ ] abre modal com formulario
+- - [ ] sugestao é adicionada ao `csv` automaticamente
+- - [ ] flag para editor revisar (aprovada automaticamente)
+- - [ ] delimitar tags (só pode usar as apresentadas)
 - [ ]  tables as categories?
 - [ ]  export events as `.ics` calendar
 
